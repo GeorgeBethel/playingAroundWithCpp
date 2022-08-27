@@ -1,0 +1,4 @@
+/home/george/modern_c++/cmake_build/build/CMakeFiles/rebuild_cache.dir
+/home/george/modern_c++/cmake_build/build/CMakeFiles/cmake_build.dir
+/home/george/modern_c++/cmake_build/build/CMakeFiles/edit_cache.dir
+/home/george/modern_c++/cmake_build/build/CMakeFiles/main.dir

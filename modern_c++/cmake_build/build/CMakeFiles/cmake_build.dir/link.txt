@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcmake_build.a  CMakeFiles/cmake_build.dir/cmake_build.cpp.o
+/usr/bin/ranlib libcmake_build.a

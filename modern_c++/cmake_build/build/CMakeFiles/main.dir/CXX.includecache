@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/george/modern_c++/cmake_build/cmake_build.hpp
+
+/home/george/modern_c++/cmake_build/main.cpp
+cmake_build.hpp
+/home/george/modern_c++/cmake_build/cmake_build.hpp
+iostream
+-
+

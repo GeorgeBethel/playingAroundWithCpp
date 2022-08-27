@@ -1,0 +1,30 @@
+Video 1
+===========================
+
+The compiler performs 4 distinct actions to build your code
+
+c++ main.cpp
+This will build program called a.out
+
+
+Behind the scene during compilation of a c++ code
+
+1. Pre-process- copy paste files. (Produce main.i)
+2. Compile - convert the code into assemby code. (produce main.s)
+3. Assembly - The assembly code is then converted into object binary that a computer can understand. (Produce main.o)
+4. Linker - 
+
+Building libraries
+==========================
+
+libraries: Multiple objects files that are logically connected
+
+Types of Libraries:
+
+static: faster, take a lot of space, become part of the end binary, named: lib*.a (everything that happens at compile time)
+
+Dynamic: Slower, can be copied, references by a program, named lib*.so (everthing that happens at run time)
+
+creat a static library with ar rcs libname.a module.o module.o ....
+
+static libraries are just archives just like zip/tar/...
