@@ -9,6 +9,7 @@ class ReadingFile
     public:
         int day;
         int temperature;
+        int pressure;
        // ReadingFile(int h, int t);
 };
 
@@ -22,7 +23,7 @@ int main()
 {
  
     
-    std::vector<ReadingFile> temps;  // creatin an vector of a class (either a struct of a class)
+    std::vector<ReadingFile> temps;  // creating a vector of a class (either a struct of a class)
 
     // temps[0].hour = 2;
     // temps[0].temperature = 20;
@@ -38,13 +39,15 @@ int main()
 
     int temp;
 
+    int psi;
+
     if(File_handler){
 
-      while(File_handler >> day >> temp){
+      while(File_handler >> day >> temp >> psi){
 
      //std::cout << "hello" << std::endl;
 
-      temps.push_back(ReadingFile{day, temp});   // you can do this without a constructor :  ReadingFile{day, temp}
+      temps.push_back(ReadingFile{day, temp, psi});   // you can do this without a constructor int the struct:  ReadingFile{day, temp}
 
       }
 
@@ -58,7 +61,7 @@ int main()
 
     }
 
-     std::cout << "day, temperature:" <<temps[2].day <<", "<<temps[2].temperature << std::endl;
+     std::cout << "day, temperature, pressure: " <<temps[2].day <<", "<<temps[2].temperature<<", "<<temps[2].pressure<< std::endl;
 
     return 0;
 
